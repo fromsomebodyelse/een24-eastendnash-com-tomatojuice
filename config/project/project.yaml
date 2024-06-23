@@ -1,10 +1,30 @@
-dateModified: 1719152940
+dateModified: 1719154005
+elementSources:
+  craft\elements\Entry:
+    -
+      key: '*'
+      type: native
+    -
+      heading: Structures
+      type: heading
+    -
+      defaultSort:
+        - structure
+        - asc
+      disabled: false
+      key: 'section:32b7b51e-e90e-4417-aa12-edba2e2e76a1' # Primary Pages
+      tableAttributes:
+        - uri
+        - status
+      type: native
 email:
   fromEmail: justen@fromsomebodyelse.com
   fromName: 'East End Neighborhood Association'
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
+    1ebdff74-dbfe-4228-987e-af312c3a0dd1: Default # Default
+    32b7b51e-e90e-4417-aa12-edba2e2e76a1: 'Primary Pages' # Primary Pages
     955b60b7-99ed-4f91-a916-cdae209841e8: 'East End Neighborhood Association' # East End Neighborhood Association
     d4fc3f26-61fd-490f-8c0c-7aa68f5939c2: 'East End Neighborhood Association' # East End Neighborhood Association
 system:
