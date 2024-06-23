@@ -1,4 +1,4 @@
-dateModified: 1719155192
+dateModified: 1719156198
 elementSources:
   craft\elements\Entry:
     -
@@ -43,6 +43,11 @@ meta:
     955b60b7-99ed-4f91-a916-cdae209841e8: 'East End Neighborhood Association' # East End Neighborhood Association
     be5e41dc-df3a-434e-a9cc-243df2b9c0a8: 'Blog Entry' # Blog Entry
     d4fc3f26-61fd-490f-8c0c-7aa68f5939c2: 'East End Neighborhood Association' # East End Neighborhood Association
+plugins:
+  vite:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
 system:
   edition: solo
   live: true
