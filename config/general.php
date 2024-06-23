@@ -24,4 +24,6 @@ return GeneralConfig::create()
     ->aliases([
         '@webroot' => dirname(__DIR__) . '/web',
     ])
+    // Disable the GraphQL sidebar item
+    ->enableGql(false)
 ;
