@@ -1,4 +1,4 @@
-dateModified: 1719154005
+dateModified: 1719155192
 elementSources:
   craft\elements\Entry:
     -
@@ -17,6 +17,20 @@ elementSources:
         - uri
         - status
       type: native
+    -
+      heading: Channels
+      type: heading
+    -
+      defaultSort:
+        - postDate
+        - desc
+      disabled: false
+      key: 'section:61e41164-eaaf-4282-adeb-06d4b33a784a' # Blog
+      tableAttributes:
+        - postDate
+        - uri
+        - status
+      type: native
 email:
   fromEmail: justen@fromsomebodyelse.com
   fromName: 'East End Neighborhood Association'
@@ -25,7 +39,9 @@ meta:
   __names__:
     1ebdff74-dbfe-4228-987e-af312c3a0dd1: Default # Default
     32b7b51e-e90e-4417-aa12-edba2e2e76a1: 'Primary Pages' # Primary Pages
+    61e41164-eaaf-4282-adeb-06d4b33a784a: Blog # Blog
     955b60b7-99ed-4f91-a916-cdae209841e8: 'East End Neighborhood Association' # East End Neighborhood Association
+    be5e41dc-df3a-434e-a9cc-243df2b9c0a8: 'Blog Entry' # Blog Entry
     d4fc3f26-61fd-490f-8c0c-7aa68f5939c2: 'East End Neighborhood Association' # East End Neighborhood Association
 system:
   edition: solo
