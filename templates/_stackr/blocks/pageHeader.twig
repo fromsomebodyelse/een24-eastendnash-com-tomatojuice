@@ -1,0 +1,22 @@
+{% macro pageHeader(props = {
+    backgroundImage: {src: '/static/images/header.jpg', width: '', height: '' },
+}) %}
+
+    <div class="bg-black">
+        <div class="relative isolate overflow-hidden pt-14">
+            {# Background Image #}
+            <img class="absolute inset-0 -z-10 w-full h-full object-cover" src="{{ props.backgroundImage.src }}" alt="Historic East End Sign">
+            
+            {# BG Gradient #}
+            <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#000] to-transparent opacity-50"></div>
+
+            {# Mast Head #}
+            <div class="relative mx-auto max-w-2xl py-20">
+                {# Mast Head Content #}
+                <div class="text-center">
+                    <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">East End<br/><span class="text-3xl tracking-wide leading-5"> Neighborhood Association</span></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endmacro %}

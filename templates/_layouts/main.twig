@@ -13,8 +13,10 @@
 <body class="">
     {% include '_includes/siteMainMenu' only %}
 
-    {% block pageBody %}
-    {% endblock %}
+    <div class="relative">
+        {% block pageBody %}
+        {% endblock %}
+    </div>
 
     {% include '_includes/siteFooter' only %}
 </body>

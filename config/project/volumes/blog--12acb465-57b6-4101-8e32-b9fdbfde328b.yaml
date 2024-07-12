@@ -1,6 +1,7 @@
-color: null
+altTranslationKeyFormat: null
+altTranslationMethod: none
 fieldLayouts:
-  93c444a7-f2cc-4d52-874e-eeb22a4bc570:
+  b64f0a25-2c81-426d-95b3-2ef6eec11acf:
     tabs:
       -
         elementCondition: null
@@ -29,37 +30,20 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 38ed02b5-f6d2-4a66-91c6-cc089147ced6
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 13aeae4f-6036-4b6c-96c4-2b819604f1ab # Prose
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 94f1e540-3204-4d8c-bda4-3074e9a3b19d
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: 9d6eeb29-bca4-4cb5-a216-66daab949772
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 5174ba1b-92ad-4727-a607-ede5b6d51e63
+        uid: 9e5e162d-54f5-4a59-99f8-7f96ead68ba7
         userCondition: null
-handle: blogEntry
-hasTitleField: true
-icon: page
-name: 'Blog Entry'
-showSlugField: true
-showStatusField: true
-slugTranslationKeyFormat: null
-slugTranslationMethod: site
-titleFormat: ''
+fs: local
+handle: blog
+name: Blog
+sortOrder: 1
+subpath: blog
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
+transformFs: ''
+transformSubpath: ''

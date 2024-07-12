@@ -1,0 +1,22 @@
+columnSuffix: null
+handle: prose
+instructions: null
+name: Prose
+searchable: false
+settings:
+  availableTransforms: ''
+  availableVolumes:
+    - 12acb465-57b6-4101-8e32-b9fdbfde328b # Blog
+  ckeConfig: 71179443-8385-4f60-9b62-2e7671a1c746 # Post Body
+  createButtonLabel: null
+  defaultTransform: null
+  enableSourceEditingForNonAdmins: true
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: false
+  wordLimit: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field
