@@ -11,6 +11,7 @@ options:
     options:
       - left
       - right
+      - center
   fontSize:
     options:
       - tiny

@@ -1,4 +1,4 @@
-dateModified: 1720734378
+dateModified: 1720747201
 elementSources:
   craft\elements\Entry:
     -
@@ -42,7 +42,7 @@ fs:
     settings:
       path: '@webroot/uploads'
     type: craft\fs\Local
-    url: $PRIMARY_SITE_URL
+    url: /uploads/
 meta:
   __names__:
     1ebdff74-dbfe-4228-987e-af312c3a0dd1: Default # Default
