@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-composer install
+composer install --no-dev --no-interaction --prefer-dist --optimize-autoloader
 
 php craft up
 
