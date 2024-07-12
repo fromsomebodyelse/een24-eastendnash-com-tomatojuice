@@ -1,3 +1,8 @@
+{% set metaTitle = entry.metaTitle ?? entry.title %}
+{% set metaDescription = entry.metaDescription ?? "Default description" %}
+{% set metaKeywords = entry.metaKeywords ?? "default, keywords" %}
+{% set metaImage = entry.metaImage.one() ?? null %}
+
 <!DOCTYPE html>
 <html lang="en-US" class="scroll-smooth">
 <head>
@@ -6,6 +11,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
     <meta name="referrer" content="origin-when-cross-origin" />
     
+    <title>{{ entry.title }} | East End Neighborhood Association</title>
+    <meta name="description" content="{{ metaDescription }}">
+    <meta name="keywords" content="{{ metaKeywords }}">
+
+    {# Open Graph tags #}
+    <meta property="og:url" content="https://www.eastendnash.com/home">
+    <meta property="og:title" content="{{ metaTitle }}">
+    <meta property="og:description" content="{{ metaDescription }}">
+    {# <meta property="og:image" content="{{ metaImage.url }}"> #}
+    
+
+    {# Twitter Card tags #}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ metaTitle }}">
+    <meta name="twitter:description" content="{{ metaDescription }}">
+    {# <meta name="twitter:image" content="{{ metaImage.url }}"> #}
+
     {{ craft.vite.script('resources/js/main.js', false) }}
 
     <style>[x-cloak] { display: none !important; }</style>
