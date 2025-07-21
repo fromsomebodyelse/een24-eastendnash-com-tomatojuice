@@ -1,0 +1,56 @@
+color: lime
+fieldLayouts:
+  e1173562-8f23-4c26-8d53-b8cabe08197c:
+    cardView:
+      - 'layoutElement:2c7e75a4-538b-453d-b38d-5b8f308672bc'
+      - 'layoutElement:48d8f04f-4378-4a68-b3cd-7a1bfbd18488'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-01-31T23:32:58+00:00'
+            elementCondition: null
+            fieldUid: a7a91e4f-aa57-4daa-b3a8-375481a6a1ea # Plain Text
+            handle: headlineTextPlain
+            includeInCards: true
+            instructions: null
+            label: Headline
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2c7e75a4-538b-453d-b38d-5b8f308672bc
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-31T23:28:28+00:00'
+            elementCondition: null
+            fieldUid: 1f2c8908-0a1a-4fb3-8e81-469fa56735aa # Summary
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 48d8f04f-4378-4a68-b3cd-7a1bfbd18488
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: c424994d-87d3-4d25-96d0-d8288b4587b1
+        userCondition: null
+handle: pageHeaderMeetings
+hasTitleField: false
+icon: square
+name: 'Page Header (Meetings)'
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: 'Page Header (Meetings)'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

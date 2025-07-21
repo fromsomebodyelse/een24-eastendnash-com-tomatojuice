@@ -1,0 +1,39 @@
+color: null
+fieldLayouts:
+  9b18bcd4-9bb9-4b6a-814a-8684d27b3db8:
+    cardView:
+      - 'layoutElement:8dabd240-bd0e-4987-9ba9-4406799c2ec7'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-01-24T20:48:08+00:00'
+            elementCondition: null
+            fieldUid: a7a91e4f-aa57-4daa-b3a8-375481a6a1ea # Plain Text
+            handle: descriptionTextPlain
+            includeInCards: true
+            instructions: null
+            label: Description
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8dabd240-bd0e-4987-9ba9-4406799c2ec7
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: aece0a52-9c1f-4a17-9942-71429ac7d806
+        userCondition: null
+handle: eenaPerksCardPerk
+hasTitleField: false
+icon: cube
+name: 'EENA Perks Card Perk'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,66 @@
+defaultPlacement: end
+fieldLayouts:
+  d8a84b10-60fa-4d3d-ac65-b09cf2ce54a6:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-01-24T20:53:46+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: 4ddea926-776d-4c71-95af-6d3bd732f454
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-01T19:07:08+00:00'
+            elementCondition: null
+            fieldUid: df267f73-082b-4fad-b1af-b330d3523ca4 # Icon
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a5affeaf-a05e-467f-8543-f97b486fc96e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 7f92e96f-8d9b-47b6-b38b-32ec173408d0
+        userCondition: null
+handle: directoryTypes
+name: 'Directory Types'
+siteSettings:
+  955b60b7-99ed-4f91-a916-cdae209841e8: # East End Neighborhood Association
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: null
+  uid: 6082e236-b66b-4425-8c33-2e41558cec20

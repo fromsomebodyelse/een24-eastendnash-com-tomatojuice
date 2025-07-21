@@ -1,0 +1,7 @@
+{% set layout = entry.section.handle ~ '.' ~ entry.type.handle %}
+
+{% extends {
+    'primaryPages.pageDefault': '_layouts/page-default',
+    'primaryPages.pageDirectory': '_layouts/page-directory',
+    'primaryPages.pageEvents': '_layouts/page-events',
+}[layout] | default('_layouts/page-default') %}

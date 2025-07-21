@@ -1,0 +1,137 @@
+color: teal
+fieldLayouts:
+  47050f2c-5cdc-469a-ab7b-265337f8d307:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-01-24T17:04:02+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 3d915d96-6e3f-43c0-9bad-3248cf9cbc68
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-26T21:25:35+00:00'
+            elementCondition: null
+            fieldUid: a7a91e4f-aa57-4daa-b3a8-375481a6a1ea # Plain Text
+            handle: pageHeaderHeadlineTextPlain
+            includeInCards: false
+            instructions: null
+            label: Headline
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c02461df-3e64-4880-8cb8-247e78ef6bb2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-26T21:25:35+00:00'
+            elementCondition: null
+            fieldUid: a7a91e4f-aa57-4daa-b3a8-375481a6a1ea # Plain Text
+            handle: pageHeaderIntroTextPlain
+            includeInCards: false
+            instructions: null
+            label: Intro
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6a9984bf-a650-4b0f-9b0e-33e89f85f19c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: a1573932-db7b-425d-8100-d0fc610557f1
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-01-26T18:02:01+00:00'
+            elementCondition: null
+            fieldUid: a7a91e4f-aa57-4daa-b3a8-375481a6a1ea # Plain Text
+            handle: featuredListingEyebrowTextPlain
+            includeInCards: false
+            instructions: null
+            label: Eyebrow
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b39d07af-4c11-42c0-93c3-f056e3aae5d0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-26T18:00:27+00:00'
+            elementCondition: null
+            fieldUid: a7a91e4f-aa57-4daa-b3a8-375481a6a1ea # Plain Text
+            handle: featuredListingSummaryTextPlain
+            includeInCards: false
+            instructions: null
+            label: Summary
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 49ec9a03-c3f4-4cf0-8ea4-69c4619219c5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-26T18:05:36+00:00'
+            elementCondition: null
+            fieldUid: 36580ea7-5c1c-4c79-bef8-f52f82ebff65 # Image Asset
+            handle: featuredListingImageAsset
+            includeInCards: false
+            instructions: null
+            label: Image
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 59e8b578-b12f-4fd0-84f6-d07aa4a4c603
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Featured Business'
+        uid: 7352a9f0-c614-41cc-a864-fa92d468fd55
+        userCondition: null
+handle: pageDirectory
+hasTitleField: true
+icon: page
+name: 'Page Directory'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

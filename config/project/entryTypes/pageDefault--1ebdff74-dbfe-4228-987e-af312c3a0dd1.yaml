@@ -1,4 +1,4 @@
-color: null
+color: teal
 fieldLayouts:
   e5b61172-8ffb-4a0e-b452-51da8a68482f:
     tabs:
@@ -10,6 +10,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: '2025-01-26T14:56:21+00:00'
             disabled: false
             elementCondition: null
             id: null
@@ -24,7 +25,7 @@ fieldLayouts:
             placeholder: null
             providesThumbs: false
             readonly: false
-            requirable: false
+            required: true
             size: null
             step: null
             tip: null
@@ -35,6 +36,23 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-01-31T23:31:38+00:00'
+            elementCondition: null
+            fieldUid: f8115dc1-feb2-4689-8088-13cac1174681 # Stack - Page Header
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Page Header'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cffc9679-ce31-41cb-9fe1-a03182add076
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-26T14:56:21+00:00'
             elementCondition: null
             fieldUid: 13aeae4f-6036-4b6c-96c4-2b819604f1ab # Prose
             handle: null
@@ -52,14 +70,14 @@ fieldLayouts:
         name: Content
         uid: 561e75c6-358f-40c1-8b26-2ca50623b28d
         userCondition: null
-handle: default
+handle: pageDefault
 hasTitleField: true
-icon: ''
-name: Default
+icon: file
+name: 'Page Default'
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
-titleFormat: ''
+titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

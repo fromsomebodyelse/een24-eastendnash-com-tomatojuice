@@ -1,0 +1,8 @@
+{% macro filterLink(props = {
+    url: '#',
+    label: 'Label',
+}) %}
+    <a href="{{ props.url }}" class="flex items-center justify-center px-2 py-1 min-w-12 rounded-full border border-dashed border-black/50 hover:border-solid hover:bg-black hover:text-white transition-colors">
+        <span class="block text-md text-center leading-tight tracking-tight whitespace-nowrap">{{ props.label }}</span>
+    </a>
+{% endmacro %}

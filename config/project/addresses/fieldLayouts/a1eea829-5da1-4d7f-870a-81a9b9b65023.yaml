@@ -1,0 +1,83 @@
+tabs:
+  -
+    elementCondition: null
+    elements:
+      -
+        autocapitalize: true
+        autocomplete: false
+        autocorrect: true
+        class: null
+        dateAdded: '2025-02-05T18:08:19+00:00'
+        disabled: false
+        elementCondition: null
+        id: null
+        includeInCards: false
+        inputType: null
+        instructions: null
+        label: null
+        max: null
+        min: null
+        name: null
+        orientation: null
+        placeholder: null
+        providesThumbs: false
+        readonly: false
+        requirable: false
+        size: null
+        step: null
+        tip: null
+        title: null
+        type: craft\fieldlayoutelements\addresses\LabelField
+        uid: 111cac71-a3f5-47da-92a9-5d1ec5c57f13
+        userCondition: null
+        warning: null
+        width: 100
+      -
+        dateAdded: '2025-02-05T18:08:19+00:00'
+        elementCondition: null
+        includeInCards: true
+        instructions: null
+        label: null
+        providesThumbs: false
+        required: false
+        tip: null
+        type: craft\fieldlayoutelements\addresses\AddressField
+        uid: fd672f81-def4-4760-8bb2-eab8e685ce04
+        userCondition: null
+        warning: null
+      -
+        attribute: countryCode
+        dateAdded: '2025-02-05T18:08:19+00:00'
+        elementCondition: null
+        id: null
+        includeInCards: false
+        instructions: null
+        label: null
+        orientation: null
+        providesThumbs: false
+        requirable: false
+        tip: null
+        type: craft\fieldlayoutelements\addresses\CountryCodeField
+        uid: 0169594d-d1ad-4768-9cbe-f9ff19a01e29
+        userCondition: null
+        warning: null
+        width: 100
+      -
+        dateAdded: '2025-02-05T18:09:32+00:00'
+        elementCondition: null
+        fieldUid: a56de902-44aa-4838-8d99-d79316785392 # Website
+        handle: null
+        includeInCards: false
+        instructions: null
+        label: null
+        providesThumbs: false
+        required: false
+        tip: null
+        type: craft\fieldlayoutelements\CustomField
+        uid: ce5d52eb-9cbd-47de-82b2-b9186cc3de52
+        userCondition: null
+        warning: null
+        width: 100
+    name: Content
+    uid: b83d30e3-8577-419a-994e-4af3570f50ab
+    userCondition: null

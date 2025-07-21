@@ -1,0 +1,46 @@
+{% macro dateList(props = {
+    headline: 'Upcoming Events (2025 / 2026)',
+    dates: [
+        'Feb 11, 2025 – Residents Meeting',
+        'Apr 08, 2025 – Residents Meeting',
+        'Jun 10, 2025 – Residents Meeting',
+        'Aug 05, 2025 – Residents Meeting',
+        'Aug 06, 2025 – Tomato Art Festival*',
+        'Oct 14, 2025 – Residents Meeting',
+        'Dec 09, 2025 – Holiday Party*',
+        'Dec 19, 2025 – East Nash Holiday Bash*',
+        'Jan 01, 2026 – Residents Meeting *',
+    ],
+    footnote: 'Time & location to be announced. Sign up for the EENA newsletter to be notified.'
+}) %}
+    <div>
+        {# Headline #}
+        {% if props.headline | default(null) %}
+            <h3 class="text-md font-semibold">{{ props.headline }}</h3>
+        {% endif %}
+
+        {# Dates #}
+        <ol class="mt-2">
+            {% for item in props.dates %}
+                <li class="text-md pb-1 pt-4 border-b border-black/20">
+                    <div class="flex items-center">
+                        {# Icon #}
+                        <span class="inline-flex items-center mr-2">
+                            {% include '_includes/icons/calendar' %}
+                        </span>
+                        {# Label #}
+                        <span>{{ item | raw }}</span>
+                    </div>
+                </li>
+            {% endfor %}
+        </ol>
+
+        {# Footnote #}
+        {% if props.footnote | default(null) %}
+            <div class="flex items-start space-x-2 mt-4 text-sm">
+                <span>*</span>
+                <p class="flex-1">Time &amp; location to be announced. <a href="#" class="underline hover:underline">Sign up</a> for the EENA newsletter to be notified.</p>
+            </div>
+        {% endif %}
+    </div>
+{% endmacro %}

@@ -1,0 +1,99 @@
+color: null
+fieldLayouts:
+  c74c00db-2fd6-4370-a3d2-9821cec6469b:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-01-24T03:44:36+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 50874742-5870-4bc2-b12e-2458806fff35
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-25T01:42:11+00:00'
+            elementCondition: null
+            fieldUid: fa36c2ed-114e-4aae-8664-9214f7233d09 # Type
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 851ba6e5-2f1d-433d-b00f-de913127567f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-24T03:59:07+00:00'
+            elementCondition: null
+            fieldUid: d8855f53-02a3-4fed-83d9-6d0a4c1ff367 # Address & Website
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 90cc2eee-8d67-4077-ae48-a65f7128536b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-24T20:49:14+00:00'
+            elementCondition: null
+            fieldUid: 874f7f0d-dc6a-4e16-97bd-fb97742fdf04 # EENA Perks Card
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 04f7eac5-e619-4f44-a6af-0efb2739de46
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: e60286c3-7668-4cf9-b5db-b5f19d55f3dd
+        userCondition: null
+handle: business
+hasTitleField: true
+icon: building
+name: Business
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

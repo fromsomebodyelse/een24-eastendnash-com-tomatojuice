@@ -22,8 +22,9 @@
   "prefer-stable": true,
   "require": {
     "craftcms/ckeditor": "^4.1.0",
-    "craftcms/cms": "5.2.6",
-    "nystudio107/craft-vite": "^5.0",
+    "craftcms/cms": "5.5.9",
+    "mmikkel/cp-field-inspect": "2.0.4",
+    "nystudio107/craft-vite": "5.0.1",
     "vlucas/phpdotenv": "^5.4.0"
   },
   "require-dev": {

@@ -1,0 +1,42 @@
+{% from '_stackr/blocks/page-header' import pageHeaderMeetings %}
+{% from '_stackr/blocks/date-list' import dateList %}
+
+{% macro renderUpcomingScheduleHeadline(eventEntries) %}{% apply spaceless %}
+
+    {% set years = eventEntries|map(event => event.startDate|date('Y'))|unique|sort %}
+    {% set earliestYear = years|first %}
+    {% set latestYear = years|last %}
+
+    {% set headline = earliestYear == latestYear 
+    ? earliestYear ~ ' Upcoming Events' 
+    : 'Upcoming Events (' ~ earliestYear ~ ' / ' ~ latestYear ~ ')' %}
+
+    {{ headline }}
+{% endapply %}{% endmacro %}
+
+{% macro renderEventLabel(eventEntry) %}{% apply spaceless %}
+    {% set hasDateAndLocation = eventEntry.startDate != null and eventEntry.locationAddress | length %}
+    {% set startDateLabel = eventEntry.startDate | date('M d, Y') %}
+    {% set footnoteHtml %}
+        {% if not hasDateAndLocation %}<sup id="footnote-ref-1" class="text-lg" aria-describedby="footnote-1">*</sup>{% endif %}
+    {% endset %}
+    <span>{{ startDateLabel }}</span> &ndash; {{ eventEntry.title }}{{ footnoteHtml }}</span>
+{% endapply %}{% endmacro %}
+
+{% set eventEntries = craft.entries()
+    .section('events')
+    .orderBy('startDate')
+    .all() %}
+
+{{ pageHeaderMeetings({
+    headline: block.headlineTextPlain,
+    intro: block.summaryTextHtml,
+}) }}
+
+<div class="mt-8">
+    {{ dateList({
+        headline: _self.renderUpcomingScheduleHeadline(eventEntries),
+        dates: eventEntries | map(event => _self.renderEventLabel(event)),
+        footnote: 'Time & location to be announced. Sign up for the EENA newsletter to be notified.',
+    }) }}
+</div>

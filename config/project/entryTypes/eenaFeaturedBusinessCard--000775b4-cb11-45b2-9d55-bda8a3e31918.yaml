@@ -1,0 +1,53 @@
+color: null
+fieldLayouts:
+  ffe2dc15-ee37-42fa-8be9-3edf86fe47a5:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-01-26T17:48:42+00:00'
+            elementCondition: null
+            fieldUid: 077bcd53-8d7f-4e27-8c86-8aca416533a2 # Business
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 43215983-8249-43d1-80b7-fcc3807551c2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-26T17:49:34+00:00'
+            elementCondition: null
+            fieldUid: a7a91e4f-aa57-4daa-b3a8-375481a6a1ea # Plain Text
+            handle: perkSummary
+            includeInCards: false
+            instructions: null
+            label: 'Perk Summary'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 738487f1-4186-4c4d-bcfc-7f4ef0eaecd8
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 90e840e2-adc7-4e74-9157-0f690be60fdf
+        userCondition: null
+handle: eenaFeaturedBusinessCard
+hasTitleField: false
+icon: cube
+name: 'EENA Featured Business Card'
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{businessEntry.one().title}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

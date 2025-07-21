@@ -1,0 +1,123 @@
+{% extends '_layouts/main' %}
+
+{% macro renderDirectoryHeader(props = {
+    directoryTypes: [],
+    headline: 'Directory',
+    intro: 'Explore the vibrant places and spaces that make up East End.',
+}) %}
+    <div class="relative md:flex px-container">
+        
+        {# Column: Intro #}
+        <div class="flex flex-col w-full md:w-3/4 lg:1/2 py-10 pr-12">
+            <h2 class="text-5xl font-semibold">{{ props.headline }}</h2>
+            <p class="mt-3 text-2xl">{{ props.intro }}</p>
+            <div class="grow"></div>
+            <div class="mt-4">
+                {{ _self.renderFilterMenu(props.directoryTypes) }}
+            </div>
+        </div>
+                
+        {# Column: Featured Business #}
+        <div class="flex md:flex-col-reverse lg:flex-row w-full md:1/4 lg:w-1/2">
+            {# Details #}
+            <div class="relative flex flex-col px-5 py-5 w-3/5 md:w-full lg:w-2/3 bg-black text-white">
+                <span class="block text-sm">Perks Featured Business</span>
+                <div class="mt-4">
+                    <img src="//www.killjoyclub.com/cdn/shop/files/killjoy-main-wordmark.png?v=1730072971&amp;width=600" alt="Killjoy" srcset="//www.killjoyclub.com/cdn/shop/files/killjoy-main-wordmark.png?v=1730072971&amp;width=150 150w, //www.killjoyclub.com/cdn/shop/files/killjoy-main-wordmark.png?v=1730072971&amp;width=225 225w, //www.killjoyclub.com/cdn/shop/files/killjoy-main-wordmark.png?v=1730072971&amp;width=300 300w" width="150" height="43.75" loading="eager" class="header__heading-logo motion-reduce" sizes="(max-width: 300px) 50vw, 150px">
+                </div>
+                <p class="mt-3 text-xl font-thin leading-relaxed">Start the year off fresh! Members receive 10% off at Killjoy. Offer expires 02/01</p>
+                <div class="grow"></div>
+                <a href="#" class="block py-1 text-sm">Not a member? Learn More {% include '_includes/icons/arrow-right' %}</a>
+            </div>
+            {# Image #}
+            <div class="relative w-2/5 md:w-full lg:w-1/3 overflow-hidden">
+                <img class="w-full h-full object-cover mb-4" src="https://www.killjoyclub.com/cdn/shop/files/KilljoyPicnic-18.jpg?v=1732648350&width=3000" alt="Business Logo">
+            </div>
+        </div>
+    </div>
+{% endmacro %}
+
+{% macro renderFilterMenu(directoryTypes) %}
+    {% from '_stackr/ui/buttons' import filterLink %}
+    <ul class="flex flex-wrap gap-x-3 gap-y-2">
+        {% for type in directoryTypes %}
+            <li class="flex flex-col items-center justify-center">
+                {{ filterLink({url: '#', label: type.title}) }}
+            </li>
+        {% endfor %}
+    </ul>
+{% endmacro %}
+
+{% macro renderMap() %}{% apply spaceless %}
+    {% set googleApiKey = 'AIzaSyC98FojqHFRLnZ_EEryH1UBno_1ygNrPto' %}
+    <div class="w-1/4 rounded-xl overflow-hidden"></div>
+{% endapply %}{% endmacro %}
+
+{% macro renderDirectoryGrid(directoryEntries, directoryTypes) %}
+
+    {# HR #}
+    <div class="h-px bg-black/20"></div>
+    
+    {# Directory #}
+    <div class="px-container py-10 bg-white/10">
+        {# Directory: Results #}
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-10">
+            {% for item in directoryEntries %}
+                {% set perks = item.perksCardPerks.eagerly().all() | default([]) %}
+
+                {% set address = item.address.one() %}
+
+                {% set gmapsUrl = address ? "https://www.google.com/maps?q=#{address|address|url_encode}" : null %}
+
+                <!-- Business Card -->
+                <div class="relative flex lg:block">
+                    {# Image #}
+                    <div class="relative aspect-square w-1/3 lg:w-full overflow-hidden">
+                        {% if perks | length %}
+                            <div class="absolute bottom-0 left-0 w-full px-2 pt-1 pb-2 bg-red-700 text-sm text-white">
+                                <span class="block font-semibold text-xs">EENA Perk</span>
+                                {{ (perks | first).descriptionTextPlain }}
+                            </div>
+                        {% endif %}
+                        <img class="w-full h-full object-cover mb-4" src="https://nashvilleguru.com/officialwebsite/wp-content/uploads/2021/11/East-Nashville-Nashville-2021-56-1536x1024.jpg" alt="Business Logo">
+                    </div>
+                    {# Name/Address #}
+                    <div>
+                        <h3 class="text-xl font-bold mt-2">{{ item.title }}</h3>
+                        {# Card: Address #}
+                        {% if address %}
+                            <div class="flex mt-2">
+                                <address class="text-sm leading-tight">{{ item.address.one()|address }}</address>
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endmacro %}
+
+{% block pageBody %}
+
+    {% set directoryEntries = craft.entries()
+    .section('directory')
+    .orderBy('title')
+    .all() %}
+
+    {% set directoryTypes = craft.categories()
+    .group('directoryTypes')
+    .relatedTo(directoryEntries)
+    .all() %}
+
+    <main class="bg-[#f2f0ed]">
+        <section>
+            {{ _self.renderDirectoryHeader({
+                headline: entry.pageHeaderHeadlineTextPlain,
+                intro: entry.pageHeaderIntroTextPlain,
+                directoryTypes,
+            }) }}
+
+            {{ _self.renderDirectoryGrid(directoryEntries, directoryTypes) }}
+        </section>
+    </main>
+{% endblock %}

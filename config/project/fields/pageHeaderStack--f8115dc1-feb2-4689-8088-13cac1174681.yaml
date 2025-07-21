@@ -1,0 +1,22 @@
+columnSuffix: null
+handle: pageHeaderStack
+instructions: null
+name: 'Stack - Page Header'
+searchable: false
+settings:
+  createButtonLabel: Header
+  defaultIndexViewMode: cards
+  entryTypes:
+    - 26ea5991-dde7-47b9-889d-f48ea2b47f77 # Page Header (Events)
+    - 3bed3674-6f18-40e7-a2c6-427ba75bdf2e # Page Header (Meetings)
+  includeTableView: false
+  maxEntries: 1
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

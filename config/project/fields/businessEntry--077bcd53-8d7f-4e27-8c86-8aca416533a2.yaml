@@ -1,0 +1,22 @@
+columnSuffix: null
+handle: businessEntry
+instructions: null
+name: Business
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  selectionLabel: null
+  showCardsInGrid: false
+  showSiteMenu: false
+  sources:
+    - 'section:2b2cc954-767a-4cb7-bfec-cc8f11f96a79' # Directory
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Entries

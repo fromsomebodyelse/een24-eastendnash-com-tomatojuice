@@ -1,0 +1,19 @@
+{% from '_stackr/blocks/event-collection' import eventCollection %}
+
+{% set eventEntries = craft.entries()
+    .section('events')
+    .orderBy('startDate')
+    .all() %}
+
+{{ eventCollection({
+    headline: block.headlineTextPlain,
+    intro: block.introTextHtml,
+    filters: block.categoryEventTypes.all() | map(type => type.title),
+    eventEntries: eventEntries | map(event => {
+        title: event.title,
+        images: event.thumbnailAsset.all() | default([]),
+        startDate: event.startDate,
+        location: event.locationAddress.one(),
+        summaryTextHtml: event.summaryTextHtml,
+    }),
+}) }}

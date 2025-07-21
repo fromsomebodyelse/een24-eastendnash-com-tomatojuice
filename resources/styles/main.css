@@ -4,5 +4,22 @@
 
 
 body {
-    background-color: #fff;
+    
+    --color-off-white: #f2f0ed;
+    --color-gray: #000;
+
+    background:#f5f3f0;
+    
+}
+
+[debug-red] {
+    border: 1px solid red;
+}
+
+[debug-green] {
+    border: 1px solid green;
+}
+
+.px-container {
+    @apply pl-4 pr-4 lg:pl-44 lg:pr-32;
 }

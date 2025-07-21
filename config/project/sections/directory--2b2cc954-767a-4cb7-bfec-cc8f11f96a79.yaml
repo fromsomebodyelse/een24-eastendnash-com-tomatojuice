@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 3be864f9-3f98-43ae-9842-d8943990bab0 # Business
+handle: directory
+maxAuthors: 1
+name: Directory
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  955b60b7-99ed-4f91-a916-cdae209841e8: # East End Neighborhood Association
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: channel

@@ -1,0 +1,21 @@
+columnSuffix: null
+handle: directoryTypesCategories
+instructions: null
+name: Type
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  selectionLabel: Type
+  showCardsInGrid: false
+  showSiteMenu: true
+  source: 'group:d56d65aa-3989-4c15-a021-4b8392cd1109' # Directory Types
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Categories

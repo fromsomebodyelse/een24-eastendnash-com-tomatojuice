@@ -1,0 +1,23 @@
+columnSuffix: null
+handle: summaryTextHtml
+instructions: null
+name: Summary
+searchable: false
+settings:
+  availableTransforms: ''
+  availableVolumes: ''
+  ckeConfig: null
+  createButtonLabel: null
+  defaultTransform: null
+  enableSourceEditingForNonAdmins: true
+  entryTypes:
+    - 188acf08-35c7-4062-9dd1-fea60dcfab26 # Block - Upcoming Events Collection
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: true
+  wordLimit: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field

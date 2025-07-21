@@ -1,0 +1,50 @@
+defaultPlacement: end
+fieldLayouts:
+  82f7112e-444a-4ece-a4a9-00244f947ae5:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-01-24T20:55:45+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: 714d27de-6bc0-4479-9a3b-f676571859d0
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 64264a5e-0f94-4a0e-b59f-9198f82df85a
+        userCondition: null
+handle: eventTypes
+name: 'Event Types'
+siteSettings:
+  955b60b7-99ed-4f91-a916-cdae209841e8: # East End Neighborhood Association
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: null
+  uid: 48d32dd4-6955-47f9-8f91-0a8554452485

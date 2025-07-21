@@ -1,0 +1,21 @@
+columnSuffix: null
+handle: featuredBusiness
+instructions: null
+name: 'Featured Business '
+searchable: false
+settings:
+  createButtonLabel: 'Featured Business'
+  defaultIndexViewMode: cards
+  entryTypes:
+    - 000775b4-cb11-45b2-9d55-bda8a3e31918 # EENA Featured Business Card
+  includeTableView: false
+  maxEntries: 1
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

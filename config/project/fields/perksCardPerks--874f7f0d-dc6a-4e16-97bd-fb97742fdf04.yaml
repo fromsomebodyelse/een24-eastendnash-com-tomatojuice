@@ -1,0 +1,21 @@
+columnSuffix: null
+handle: perksCardPerks
+instructions: null
+name: 'EENA Perks Card'
+searchable: false
+settings:
+  createButtonLabel: Perk
+  defaultIndexViewMode: cards
+  entryTypes:
+    - 126439cc-19a1-4cf7-89b8-18069dde301b # EENA Perks Card Perk
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

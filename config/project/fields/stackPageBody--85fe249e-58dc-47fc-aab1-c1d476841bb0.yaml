@@ -1,0 +1,21 @@
+columnSuffix: null
+handle: stackPageBody
+instructions: null
+name: 'Page Body'
+searchable: false
+settings:
+  createButtonLabel: 'Content Block'
+  defaultIndexViewMode: cards
+  entryTypes:
+    - 188acf08-35c7-4062-9dd1-fea60dcfab26 # Block - Upcoming Events Collection
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

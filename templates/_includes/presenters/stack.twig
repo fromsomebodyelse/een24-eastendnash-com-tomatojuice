@@ -1,0 +1,27 @@
+{#
+ # Displays all blocks associated with a contentStack field. Blocks
+ # must have a corresponding presenter within the `config.presentersPath`
+ #}
+{% macro stack(field, entry, config = {
+    presentersPath: '/_includes/presenters/',
+}) %}
+    {# Query the field for it's top-level blocks. #}
+    {% set topLevelBlocks = field.all() %}
+
+    {% for block in topLevelBlocks %}
+
+        {% set blockPresenter = config.presentersPath ~ (block.type.handle) %}
+
+        {% set cacheId = "stack-block_#{entry.uid}__#{block.uid}" %}
+
+        {# parameters to be shared with the block presenter #}
+        {% set blockParams = {
+            block,
+            blockIndex: loop.index,
+            entry,
+        } %}
+
+        {% include blockPresenter with blockParams only %}
+
+    {% endfor %}
+{% endmacro %}
