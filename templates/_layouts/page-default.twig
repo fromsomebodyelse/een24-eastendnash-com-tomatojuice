@@ -1,0 +1,16 @@
+{% extends '_layouts/main' %}   
+
+{% block pageBody %}
+
+    {% from '_stackr/blocks/pageHeader' import pageHeader %}
+    {{ pageHeader() }}
+
+    {% set isHome = entry.slug == '__home__' %}
+
+    {% if not isHome %}    
+        <div class="mx-auto px-10 my-20 prose prose-quoteless md:prose-lg max-w-screen-md">
+            <h1>{{ entry.title }}</h1>
+            {{ entry.prose }}
+        </div>
+    {% endif %}
+{% endblock %}

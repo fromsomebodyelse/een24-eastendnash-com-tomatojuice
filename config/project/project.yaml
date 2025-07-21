@@ -1,0 +1,79 @@
+dateModified: 1720747201
+elementSources:
+  craft\elements\Entry:
+    -
+      key: '*'
+      type: native
+    -
+      heading: Structures
+      type: heading
+    -
+      defaultSort:
+        - structure
+        - asc
+      disabled: false
+      key: 'section:32b7b51e-e90e-4417-aa12-edba2e2e76a1' # Primary Pages
+      tableAttributes:
+        - uri
+        - status
+      type: native
+    -
+      heading: Channels
+      type: heading
+    -
+      defaultSort:
+        - postDate
+        - desc
+      disabled: false
+      key: 'section:61e41164-eaaf-4282-adeb-06d4b33a784a' # Blog
+      tableAttributes:
+        - postDate
+        - uri
+        - status
+      type: native
+email:
+  fromEmail: justen@fromsomebodyelse.com
+  fromName: 'East End Neighborhood Association'
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  local:
+    hasUrls: true
+    name: Local
+    settings:
+      path: '@webroot/uploads'
+    type: craft\fs\Local
+    url: /uploads/
+meta:
+  __names__:
+    1ebdff74-dbfe-4228-987e-af312c3a0dd1: Default # Default
+    12acb465-57b6-4101-8e32-b9fdbfde328b: Blog # Blog
+    13aeae4f-6036-4b6c-96c4-2b819604f1ab: Prose # Prose
+    32b7b51e-e90e-4417-aa12-edba2e2e76a1: 'Primary Pages' # Primary Pages
+    61e41164-eaaf-4282-adeb-06d4b33a784a: Blog # Blog
+    955b60b7-99ed-4f91-a916-cdae209841e8: 'East End Neighborhood Association' # East End Neighborhood Association
+    71179443-8385-4f60-9b62-2e7671a1c746: 'Post Body' # Post Body
+    be5e41dc-df3a-434e-a9cc-243df2b9c0a8: 'Blog Entry' # Blog Entry
+    d4fc3f26-61fd-490f-8c0c-7aa68f5939c2: 'East End Neighborhood Association' # East End Neighborhood Association
+    e507235a-acd1-4355-b795-38f16d06bafe: Simple # Simple
+plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
+  vite:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: solo
+  live: true
+  name: 'East End Neighborhood Association'
+  schemaVersion: 5.0.0.21
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  require2fa: false
+  requireEmailVerification: true

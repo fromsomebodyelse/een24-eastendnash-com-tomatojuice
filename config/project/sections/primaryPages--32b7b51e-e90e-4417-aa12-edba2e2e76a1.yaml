@@ -1,0 +1,30 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 1ebdff74-dbfe-4228-987e-af312c3a0dd1 # Default
+handle: primaryPages
+maxAuthors: 1
+name: 'Primary Pages'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  955b60b7-99ed-4f91-a916-cdae209841e8: # East End Neighborhood Association
+    enabledByDefault: false
+    hasUrls: true
+    template: _layouts/page-default.twig
+    uriFormat: '{parent.uri}/{slug}'
+structure:
+  maxLevels: null
+  uid: 79cbb309-4694-40ad-8c4a-a89ca9b6e38c
+type: structure

@@ -1,0 +1,57 @@
+headingLevels:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+name: 'Post Body'
+options:
+  alignment:
+    options:
+      - left
+      - right
+      - center
+  fontSize:
+    options:
+      - tiny
+      - small
+      - big
+      - huge
+toolbar:
+  - sourceEditing
+  - heading
+  - '|'
+  - subscript
+  - undo
+  - redo
+  - removeFormat
+  - findAndReplace
+  - codeBlock
+  - anchor
+  - superscript
+  - code
+  - strikethrough
+  - underline
+  - alignment
+  - bold
+  - italic
+  - link
+  - fontColor
+  - fontBackgroundColor
+  - fontSize
+  - htmlEmbed
+  - fontFamily
+  - insertTable
+  - horizontalLine
+  - selectAll
+  - todoList
+  - pageBreak
+  - outdent
+  - indent
+  - numberedList
+  - bulletedList
+  - blockQuote
+  - '|'
+  - insertImage
+  - mediaEmbed
